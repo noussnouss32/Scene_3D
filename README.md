@@ -1,8 +1,5 @@
 # Forêt Enchantée 3D — version C++ / OpenGL 3.3
 
-Portage fidèle du « Studio Forêt Enchantée 3D » (Three.js) en **C++17 + OpenGL 3.3 core**.
-Mêmes modèles procéduraux.
-
 
 ## Ce qui est reproduit
 
