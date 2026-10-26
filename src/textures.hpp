@@ -1,8 +1,6 @@
 // ============================================================================
-//  textures.hpp - Textures procédurales (équivalent du TextureGenerator JS)
+//  textures.hpp - Textures procédurales 
 //  Écorce, normal-map d'écorce et sol moussu, dessinés sur un "canvas" CPU.
-//  NB : comme dans le HTML, les textures sont lues comme des données LINÉAIRES
-//  (CanvasTexture sans colorSpace sRGB) -> on les envoie en GL_RGBA8 simple.
 // ============================================================================
 #pragma once
 #include <glad/gl.h>
