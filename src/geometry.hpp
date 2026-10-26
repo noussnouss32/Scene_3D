@@ -1,5 +1,5 @@
 // ============================================================================
-//  geometry.hpp - Générateurs de géométries (reproduisent les primitives Three.js)
+//  geometry.hpp - Générateurs de géométries 
 //  CylinderGeometry, ConeGeometry, DodecahedronGeometry, SphereGeometry (calotte),
 //  PlaneGeometry (terrain ondulé).
 // ============================================================================
