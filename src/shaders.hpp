@@ -1,6 +1,6 @@
 // ============================================================================
 //  shaders.hpp - Tous les shaders GLSL 3.30 core du projet
-//  Le modèle d'éclairage reproduit MeshStandardMaterial de Three.js r160 :
+//  Le modèle d'éclairage reproduit MeshStandardMaterial :
 //   - Lambert/π pour le diffus, GGX (Smith corrélé + Schlick) pour le spéculaire
 //   - lumière hémisphérique, directionnelle (ombres PCF), 3 lumières ponctuelles
 //     (decay = 2, distance de coupure), ombre cubique pour le feu de camp
