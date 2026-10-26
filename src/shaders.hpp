@@ -399,7 +399,7 @@ void main() {
 }
 )GLSL";
 
-// Sortie finale : scène linéaire -> sRGB, puis ajout additif du bloom (comme le HTML)
+// Sortie finale : scène linéaire -> sRGB, puis ajout additif du bloom 
 static const char* FINAL_FS = R"GLSL(
 #version 330 core
 in vec2 vUv;
