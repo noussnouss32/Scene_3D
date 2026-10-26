@@ -91,7 +91,7 @@ float pow2(float x) { return x * x; }
 float pow4(float x) { float x2 = x * x; return x2 * x2; }
 float sat(float x)  { return clamp(x, 0.0, 1.0); }
 
-// --- BRDF GGX (identique à Three.js) ---
+// --- BRDF GGX  ---
 vec3 F_Schlick(vec3 f0, float f90, float dotVH) {
     float fresnel = exp2((-5.55473 * dotVH - 6.98316) * dotVH);
     return f0 * (1.0 - fresnel) + (f90 * fresnel);
@@ -120,7 +120,7 @@ vec3 BRDF_GGX(vec3 L, vec3 V, vec3 N, vec3 f0, float rough) {
     return F * (Vis * D);
 }
 
-// --- normal mapping (perturbNormal2Arb de Three.js) ---
+// --- normal mapping  ---
 vec3 perturbNormal(vec3 pos, vec3 N, vec2 uv, vec3 mapN) {
     vec3 q0 = dFdx(pos);
     vec3 q1 = dFdy(pos);
@@ -260,7 +260,7 @@ void main() {
 )GLSL";
 
 // ---------------------------------------------------------------------------
-//  Particules (lucioles / pluie) - THREE.Points avec sizeAttenuation
+//  Particules (lucioles / pluie) 
 // ---------------------------------------------------------------------------
 static const char* POINTS_VS = R"GLSL(
 #version 330 core
