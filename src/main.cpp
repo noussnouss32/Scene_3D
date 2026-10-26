@@ -1,11 +1,10 @@
 // ============================================================================
 //  FORÊT ENCHANTÉE 3D  -  Version C++ / OpenGL 3.3 core
-//  Portage fidèle du "Studio Forêt Enchantée 3D" (Three.js) :
-//   - textures PBR procédurales (écorce, normal map, sol moussu)
-//   - sapins, chênes, champignons bioluminescents, feu de camp, relief ondulé
-//   - cycle Jour / Coucher / Nuit / Aube, brouillard exponentiel, vent
-//   - lucioles, pluie, ombres (soleil + feu de camp), bloom (UnrealBloom)
-//   - caméra orbitale avec inertie + 4 vues prédéfinies, picking par clic
+//   textures PBR procédurales (écorce, normal map, sol moussu)
+//   sapins, chênes, champignons bioluminescents, feu de camp, relief ondulé
+//   cycle Jour / Coucher / Nuit / Aube, brouillard exponentiel, vent
+//   lucioles, pluie, ombres (soleil + feu de camp), bloom (UnrealBloom)
+//   caméra orbitale avec inertie + 4 vues prédéfinies, picking par clic
 // ============================================================================
 #include <glad/gl.h>
 #include <GLFW/glfw3.h>
@@ -125,7 +124,7 @@ static mat4 eulerXYZ(float x, float y, float z) {            // THREE.Euler 'XYZ
 }
 
 // ----------------------------------------------------------------------------
-//  Caméra orbitale (équivalent OrbitControls + CameraController du HTML)
+//  Caméra orbitale 
 // ----------------------------------------------------------------------------
 struct CameraController {
     vec3  pos{0, 18, 28}, target{0, 0, 0};
@@ -262,7 +261,7 @@ struct PointCloud {
 };
 
 // ----------------------------------------------------------------------------
-//  Bloom (UnrealBloomPass : high-pass + 5 flous gaussiens + composite)
+//  Effet Bloom (UnrealBloomPass : high-pass + 5 flous gaussiens + composite)
 // ----------------------------------------------------------------------------
 struct Bloom {
     static constexpr int N = 5;
